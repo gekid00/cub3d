@@ -4,6 +4,14 @@ A 3D graphical engine inspired by Wolfenstein 3D, built as part of the 42 school
 The program renders a first-person perspective inside a maze defined by a `.cub` map file,
 using raycasting with the DDA (Digital Differential Analyzer) algorithm.
 
+## Team & my contribution
+
+Pair project with **acrusoe** (42 Paris).
+
+- **Rendering & textures (my part):** drawing the textured wall columns from the raycasting results, floor and ceiling colors.
+- **Map parsing:** reading the `.cub` file (textures, colors, map) and validating it (closed walls, flood fill, one player), tested against ~50 valid and invalid maps in `test_maps/`.
+- **Debugging (shared):** after the initial split, we both worked across the whole engine to fix edge cases.
+
 ## Technologies
 
 - **Language:** C (C89/90, compiled with `-Wall -Wextra -Werror`)
